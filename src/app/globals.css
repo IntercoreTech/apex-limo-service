@@ -1,26 +1,55 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --apex-gold: #C9A84C;
+  --apex-gold-light: #D4B96A;
+  --apex-gold-dark: #A88A30;
+  --apex-black: #0A0A0A;
+  --apex-dark: #141414;
+  --apex-gray: #1E1E1E;
+  --apex-light-gray: #F5F5F5;
+  --apex-white: #FFFFFF;
+  --apex-text-muted: #AAAAAA;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-apex-gold: var(--apex-gold);
+  --color-apex-gold-light: var(--apex-gold-light);
+  --color-apex-gold-dark: var(--apex-gold-dark);
+  --color-apex-black: var(--apex-black);
+  --color-apex-dark: var(--apex-dark);
+  --color-apex-gray: var(--apex-gray);
+  --color-apex-light-gray: var(--apex-light-gray);
+  --color-apex-white: var(--apex-white);
+  --color-apex-text-muted: var(--apex-text-muted);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--apex-black);
+  color: var(--apex-white);
+  font-family: 'Montserrat', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gold divider utility */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--apex-gold);
+  margin: 16px 0;
+}
+
+.gold-divider-center {
+  margin: 16px auto;
 }
