@@ -53,3 +53,248 @@ body {
 .gold-divider-center {
   margin: 16px auto;
 }
+
+/* Hover card utilities — used in server components instead of JS event handlers */
+.apex-card-hover {
+  border: 1px solid #2A2A2A;
+  transition: border-color 0.2s ease;
+}
+.apex-card-hover:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+}
+
+.apex-related-post-hover {
+  border: 1px solid #2A2A2A;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.apex-related-post-hover:hover {
+  border-color: #C9A84C;
+  transform: translateY(-4px);
+}
+
+.apex-link-hover {
+  color: #C9A84C;
+  transition: color 0.2s ease;
+}
+.apex-link-hover:hover {
+  color: #E0B85F;
+}
+
+.apex-blog-card {
+  background-color: #0A0A0A;
+  border: 1px solid #2A2A2A;
+  border-radius: 8px;
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+  cursor: pointer;
+}
+.apex-blog-card:hover {
+  border-color: #C9A84C;
+  background-color: #141414;
+}
+
+.apex-email-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px 16px;
+  font-size: 14px;
+  background-color: #141414;
+  border: 1px solid #2A2A2A;
+  border-radius: 4px;
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+.apex-email-input:focus {
+  border-color: #C9A84C;
+}
+
+.apex-btn-gold {
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.25s ease;
+  font-family: inherit;
+}
+.apex-btn-gold:hover {
+  background-color: #DDB855;
+}
+
+.apex-btn-gold-link {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.25s ease;
+}
+.apex-btn-gold-link:hover {
+  background-color: #DDB855;
+}
+
+.apex-btn-gradient {
+  display: inline-block;
+  padding: 16px 40px;
+  background: linear-gradient(90deg, #8B7D3E 0%, #C9A84C 100%);
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+.apex-btn-gradient:hover {
+  opacity: 0.85;
+}
+
+.apex-btn-outline-gold {
+  padding: 16px 32px;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #C9A84C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.apex-btn-outline-gold:hover {
+  background-color: transparent;
+  color: #C9A84C;
+}
+
+.apex-btn-outline-gold-reverse {
+  padding: 16px 32px;
+  background-color: transparent;
+  color: #C9A84C;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #C9A84C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.apex-btn-outline-gold-reverse:hover {
+  background-color: #C9A84C;
+  color: #0A0A0A;
+}
+
+.apex-btn-solid-gold {
+  display: inline-block;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  padding: 16px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.apex-btn-solid-gold:hover {
+  background-color: #D4B85F;
+}
+
+.apex-btn-dark-gray {
+  display: inline-block;
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid #3A3A3A;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.apex-btn-dark-gray:hover {
+  background-color: #3A3A3A;
+}
+
+.apex-btn-lift {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.apex-btn-lift:hover {
+  transform: translateY(-2px);
+}
+
+.apex-service-card-link {
+  display: block;
+  background: #0A0A0A;
+  border: 1px solid #2A2A2A;
+  padding: 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+.apex-service-card-link:hover {
+  border-color: #C9A84C;
+  background: #1A1A1A;
+}
+
+.apex-btn-gold-light {
+  display: inline-block;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  padding: 16px 48px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.apex-btn-gold-light:hover {
+  background-color: #E0B85E;
+}
+
+.apex-btn-outline-gold-dark {
+  display: inline-block;
+  padding: 14px 48px;
+  background-color: #C9A84C;
+  color: #0A0A0A;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  border: 2px solid #C9A84C;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.apex-btn-outline-gold-dark:hover {
+  background-color: #0A0A0A;
+  color: #C9A84C;
+}
