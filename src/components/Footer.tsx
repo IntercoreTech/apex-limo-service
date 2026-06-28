@@ -8,8 +8,8 @@ const PHONE_HREF = "tel:+18774271777";
 export function Footer() {
   return (
     <footer style={{ background: "#0A0A0A", borderTop: "1px solid #1A1A1A" }}>
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "64px 24px" }}>
+        <div className="apex-grid-4" style={{ gap: "40px" }}>
 
           {/* Brand Column */}
           <div>
@@ -20,7 +20,7 @@ export function Footer() {
                 <div style={{ fontWeight: 300, fontSize: "6px", letterSpacing: "2px", color: "#C9A84C" }}>INTERNATIONAL TRANSPORTATION</div>
               </div>
             </div>
-            <p style={{ color: "#555", fontSize: "13px", lineHeight: 1.8, marginBottom: "16px" }}>
+            <p style={{ color: "#888", fontSize: "13px", lineHeight: 1.8, marginBottom: "16px" }}>
               Premium ground transportation since 1994. Serving Southern California, Las Vegas, Miami &amp; Fort Lauderdale.
             </p>
             <div style={{ width: "40px", height: "2px", background: "#C9A84C" }} />
@@ -90,7 +90,7 @@ export function Footer() {
 
       {/* Copyright bar */}
       <div style={{ borderTop: "1px solid #141414", background: "#060606" }}>
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "20px 24px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
           <p style={{ color: "#333", fontSize: "12px" }}>
             © {new Date().getFullYear()} Apex International Transportation. All rights reserved. Fully Licensed, Insured &amp; Compliant.
           </p>
