@@ -186,7 +186,7 @@ export default function Home() {
             style={{ width: "100%", display: "block" }}
           />
         </div>
-        <div className="max-w-4xl mx-auto px-6 relative text-center">
+        <div style={{ maxWidth: "896px", margin: "0 auto", padding: "0 24px", position: "relative", textAlign: "center" }}>
           <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "20px" }} className="speakable">
             Premium Chauffeured Transportation Since 1994
           </p>
