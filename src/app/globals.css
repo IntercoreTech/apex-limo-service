@@ -298,3 +298,62 @@ body {
   background-color: #0A0A0A;
   color: #C9A84C;
 }
+
+/* Responsive layout helpers — replaces Tailwind mx-auto which is broken in this Tailwind v4 setup */
+.apex-row {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+@media (min-width: 768px) {
+  .apex-row {
+    flex-direction: row;
+  }
+}
+
+.apex-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .apex-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .apex-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.apex-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  .apex-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.apex-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  .apex-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.apex-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}

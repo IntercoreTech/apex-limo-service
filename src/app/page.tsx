@@ -213,8 +213,8 @@ export default function Home() {
 
       {/* STATS BAR */}
       <div style={{ background: "#141414", borderBottom: "1px solid #1E1E1E", borderTop: "1px solid #1E1E1E" }}>
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "24px" }}>
+          <div className="apex-stats-grid">
             {STATS.map((s) => (
               <div key={s.label}>
                 <div style={{ fontWeight: 900, fontSize: "clamp(28px,3vw,42px)", color: "#C9A84C", lineHeight: 1 }}>{s.value}</div>
@@ -226,14 +226,14 @@ export default function Home() {
       </div>
 
       {/* SERVICES */}
-      <section style={{ background: "#0A0A0A" }} className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
+      <section style={{ background: "#0A0A0A", padding: "80px 0" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: "56px" }}>
             <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>What We Do</p>
             <h2 style={{ fontWeight: 800, fontSize: "clamp(28px,3vw,42px)", color: "#FFFFFF", lineHeight: 1.2, marginBottom: "16px" }}>Transportation Services</h2>
             <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "0 auto" }} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="apex-grid-3">
             {SERVICES.map((svc) => (
               <Link key={svc.href} href={svc.href} style={{ textDecoration: "none" }}>
                 <div className="apex-card-hover" style={{ background: "#141414", borderRadius: "8px", padding: "32px 28px", height: "100%" }}>
@@ -249,14 +249,14 @@ export default function Home() {
       </section>
 
       {/* FLEET */}
-      <section style={{ background: "#111111", borderTop: "1px solid #1E1E1E" }} className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
+      <section style={{ background: "#111111", borderTop: "1px solid #1E1E1E", padding: "80px 0" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: "56px" }}>
             <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>Our Vehicles</p>
             <h2 style={{ fontWeight: 800, fontSize: "clamp(28px,3vw,42px)", color: "#FFFFFF", lineHeight: 1.2, marginBottom: "16px" }}>The Apex Fleet</h2>
             <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "0 auto" }} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="apex-grid-4">
             {FLEET.map((v) => (
               <div key={v.name} style={{ background: "#0A0A0A", border: "1px solid #2A2A2A", borderRadius: "8px", overflow: "hidden" }}>
                 <div style={{ height: "180px", overflow: "hidden", background: "#1A1A1A" }}>
@@ -274,14 +274,14 @@ export default function Home() {
       </section>
 
       {/* LOCATIONS */}
-      <section style={{ background: "#0A0A0A" }} className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-14">
+      <section style={{ background: "#0A0A0A", padding: "80px 0" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: "56px" }}>
             <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>Where We Operate</p>
             <h2 style={{ fontWeight: 800, fontSize: "clamp(28px,3vw,42px)", color: "#FFFFFF", lineHeight: 1.2, marginBottom: "16px" }}>Our Markets</h2>
             <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "0 auto" }} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="apex-grid-4">
             {LOCATIONS_LIST.map((loc) => (
               <Link key={loc.href} href={loc.href} style={{ textDecoration: "none" }}>
                 <div className="apex-card-hover" style={{ background: "#141414", borderRadius: "8px", padding: "28px 24px", height: "100%" }}>
@@ -300,33 +300,33 @@ export default function Home() {
       </section>
 
       {/* WHY APEX */}
-      <section style={{ background: "#F5F5F5" }} className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row gap-16">
-            <div className="flex-1">
+      <section style={{ background: "#111111", padding: "80px 0" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px" }}>
+          <div className="apex-row">
+            <div style={{ flex: 1 }}>
               <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>Our Commitment</p>
-              <h2 style={{ fontWeight: 800, fontSize: "clamp(24px,3vw,38px)", color: "#0A0A0A", lineHeight: 1.2, marginBottom: "16px" }}>
+              <h2 style={{ fontWeight: 800, fontSize: "clamp(24px,3vw,38px)", color: "#FFFFFF", lineHeight: 1.2, marginBottom: "16px" }}>
                 Why Choose Apex International?
               </h2>
               <div style={{ width: "60px", height: "3px", background: "#C9A84C", marginBottom: "28px" }} />
-              <p style={{ color: "#555", fontSize: "15px", lineHeight: 1.9, marginBottom: "16px" }}>
+              <p style={{ color: "#AAAAAA", fontSize: "15px", lineHeight: 1.9, marginBottom: "16px" }}>
                 Founded in 1994, Apex International Transportation was built on a simple principle — deliver the best possible service, on time, every time. Three decades later, that commitment drives everything we do.
               </p>
-              <p style={{ color: "#555", fontSize: "15px", lineHeight: 1.9, marginBottom: "24px" }}>
+              <p style={{ color: "#AAAAAA", fontSize: "15px", lineHeight: 1.9, marginBottom: "24px" }}>
                 Our multilingual, multi-national team brings together decades of transportation experience with a genuine passion for hospitality. Many of our original 1994 clients are still with us today.
               </p>
               <Link href="/about/" style={{ display: "inline-block", border: "2px solid #C9A84C", color: "#C9A84C", background: "transparent", fontWeight: 700, fontSize: "12px", letterSpacing: "2px", padding: "13px 28px", borderRadius: "4px", textDecoration: "none" }}>
                 OUR STORY →
               </Link>
             </div>
-            <div className="flex-1">
-              <div className="grid grid-cols-1 gap-5">
+            <div style={{ flex: 1 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px" }}>
                 {WHY.map((item) => (
                   <div key={item.title} style={{ display: "flex", alignItems: "flex-start", gap: "16px" }}>
                     <span style={{ fontSize: "22px", flexShrink: 0, marginTop: "2px" }}>{item.icon}</span>
                     <div>
-                      <p style={{ fontWeight: 700, fontSize: "14px", color: "#0A0A0A", marginBottom: "3px" }}>{item.title}</p>
-                      <p style={{ fontSize: "13px", color: "#666", lineHeight: 1.7 }}>{item.desc}</p>
+                      <p style={{ fontWeight: 700, fontSize: "14px", color: "#FFFFFF", marginBottom: "3px" }}>{item.title}</p>
+                      <p style={{ fontSize: "13px", color: "#AAAAAA", lineHeight: 1.7 }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -337,9 +337,9 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: "#0D0D0D", borderTop: "1px solid #1E1E1E" }} className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-14">
+      <section style={{ background: "#0D0D0D", borderTop: "1px solid #1E1E1E", padding: "80px 0" }}>
+        <div style={{ maxWidth: "896px", margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: "56px" }}>
             <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>Common Questions</p>
             <h2 style={{ fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#FFFFFF", lineHeight: 1.2 }}>Frequently Asked Questions</h2>
             <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "16px auto 0" }} />
@@ -356,8 +356,8 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#141414", borderTop: "3px solid #C9A84C" }} className="py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section style={{ background: "#141414", borderTop: "3px solid #C9A84C", padding: "80px 0" }}>
+        <div style={{ maxWidth: "896px", margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
           <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "3px", textTransform: "uppercase", marginBottom: "12px" }}>Ready to Book?</p>
           <h2 style={{ fontWeight: 800, fontSize: "clamp(28px,4vw,48px)", color: "#FFFFFF", lineHeight: 1.2, marginBottom: "16px" }}>
             Available 24/7 — Let&apos;s Ride
@@ -367,7 +367,7 @@ export default function Home() {
             Call us anytime for bookings, quotes, and event coordination.<br />
             Serving Los Angeles, Las Vegas, Miami &amp; Fort Lauderdale.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <div className="apex-cta-buttons">
             <a href={PHONE_HREF} style={{ background: "linear-gradient(90deg,#A88A30,#C9A84C,#A88A30)", color: "#0A0A0A", fontWeight: 800, fontSize: "18px", letterSpacing: "0.5px", padding: "18px 44px", borderRadius: "4px", textDecoration: "none" }}>
               📞 {PHONE}
             </a>
