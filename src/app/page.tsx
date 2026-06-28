@@ -174,42 +174,39 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }} />
 
       {/* HERO */}
-      <section style={{ background: "linear-gradient(160deg,#080808 0%,#141414 60%,#0A0A0A 100%)", position: "relative", overflow: "hidden" }} className="py-28">
+      <section style={{ background: "linear-gradient(160deg,#080808 0%,#141414 60%,#0A0A0A 100%)", position: "relative", overflow: "hidden" }} className="py-32">
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg,transparent,#C9A84C,transparent)" }} />
-        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 70% 50%, #C9A84C0A 0%, transparent 60%)" }} />
-        <div className="max-w-7xl mx-auto px-6 relative">
-          <div className="flex flex-col md:flex-row items-center gap-16">
-            <div className="flex-1">
-              <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "16px" }} className="speakable">
-                Premium Chauffeured Transportation Since 1994
-              </p>
-              <h1 style={{ fontWeight: 900, fontSize: "clamp(44px,6vw,76px)", lineHeight: 1.0, color: "#FFFFFF", textTransform: "uppercase", marginBottom: "0" }}>
-                BUILT ON
-              </h1>
-              <h1 style={{ fontWeight: 900, fontSize: "clamp(44px,6vw,76px)", lineHeight: 1.0, color: "#C9A84C", textTransform: "uppercase", marginBottom: "24px" }}>
-                TRUST.
-              </h1>
-              <div style={{ width: "60px", height: "3px", background: "#C9A84C", marginBottom: "24px" }} />
-              <p style={{ color: "#AAAAAA", fontSize: "17px", lineHeight: 1.9, marginBottom: "40px", maxWidth: "520px" }} className="speakable">
-                Safe. Reliable. Professional. Every mile, every time — from LAX to the Las Vegas Strip, from Miami Beach to the Everglades.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href={PHONE_HREF} style={{ background: "linear-gradient(90deg,#A88A30,#C9A84C,#A88A30)", color: "#0A0A0A", fontWeight: 800, fontSize: "15px", letterSpacing: "0.5px", padding: "17px 34px", borderRadius: "4px", textDecoration: "none", textAlign: "center" }}>
-                  📞 CALL {PHONE}
-                </a>
-                <Link href="/services/" style={{ border: "1px solid #C9A84C", color: "#C9A84C", fontWeight: 600, fontSize: "13px", letterSpacing: "1.5px", padding: "17px 34px", borderRadius: "4px", textDecoration: "none", textAlign: "center" }}>
-                  VIEW SERVICES
-                </Link>
-              </div>
-            </div>
-            <div className="flex-1 hidden md:block">
-              <img
-                src="https://apexlimola.com/wp-content/uploads/2023/02/Mercedes_s-class_w223_black_1.png"
-                alt="Luxury Black Car — Apex International Transportation"
-                style={{ width: "100%", maxWidth: "500px", borderRadius: "8px", display: "block" }}
-                loading="eager"
-              />
-            </div>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 50%, #C9A84C0D 0%, transparent 65%)" }} />
+        {/* Decorative car — right side, no layout impact */}
+        <div className="hidden lg:block" style={{ position: "absolute", right: 0, top: "50%", transform: "translateY(-50%)", width: "42%", opacity: 0.18, pointerEvents: "none" }}>
+          <img
+            src="https://apexlimola.com/wp-content/uploads/2023/02/Mercedes_s-class_w223_black_1.png"
+            alt=""
+            aria-hidden="true"
+            style={{ width: "100%", display: "block" }}
+          />
+        </div>
+        <div className="max-w-4xl mx-auto px-6 relative text-center">
+          <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "20px" }} className="speakable">
+            Premium Chauffeured Transportation Since 1994
+          </p>
+          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#FFFFFF", textTransform: "uppercase", marginBottom: "0" }}>
+            BUILT ON
+          </h1>
+          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#C9A84C", textTransform: "uppercase", marginBottom: "28px" }}>
+            TRUST.
+          </h1>
+          <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "0 auto 28px" }} />
+          <p style={{ color: "#AAAAAA", fontSize: "18px", lineHeight: 1.9, marginBottom: "44px", maxWidth: "580px", marginLeft: "auto", marginRight: "auto" }} className="speakable">
+            Safe. Reliable. Professional. Every mile, every time — from LAX to the Las Vegas Strip, from Miami Beach to the Everglades.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={PHONE_HREF} style={{ background: "linear-gradient(90deg,#A88A30,#C9A84C,#A88A30)", color: "#0A0A0A", fontWeight: 800, fontSize: "15px", letterSpacing: "0.5px", padding: "18px 38px", borderRadius: "4px", textDecoration: "none" }}>
+              📞 CALL {PHONE}
+            </a>
+            <Link href="/services/" style={{ border: "1px solid #C9A84C", color: "#C9A84C", fontWeight: 600, fontSize: "13px", letterSpacing: "1.5px", padding: "18px 38px", borderRadius: "4px", textDecoration: "none" }}>
+              VIEW SERVICES
+            </Link>
           </div>
         </div>
       </section>
