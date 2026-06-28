@@ -190,17 +190,17 @@ export default function Home() {
           <p style={{ color: "#C9A84C", fontWeight: 700, fontSize: "11px", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "20px" }} className="speakable">
             Premium Chauffeured Transportation Since 1994
           </p>
-          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#FFFFFF", textTransform: "uppercase", marginBottom: "0" }}>
+          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#FFFFFF", textTransform: "uppercase", marginBottom: "0", textAlign: "center" }}>
             BUILT ON
           </h1>
-          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#C9A84C", textTransform: "uppercase", marginBottom: "28px" }}>
+          <h1 style={{ fontWeight: 900, fontSize: "clamp(48px,7vw,88px)", lineHeight: 1.0, color: "#C9A84C", textTransform: "uppercase", marginBottom: "28px", textAlign: "center" }}>
             TRUST.
           </h1>
           <div style={{ width: "60px", height: "3px", background: "#C9A84C", margin: "0 auto 28px" }} />
-          <p style={{ color: "#AAAAAA", fontSize: "18px", lineHeight: 1.9, marginBottom: "44px", maxWidth: "580px", marginLeft: "auto", marginRight: "auto" }} className="speakable">
+          <p style={{ color: "#AAAAAA", fontSize: "18px", lineHeight: 1.9, marginBottom: "44px", maxWidth: "580px", margin: "0 auto 44px", textAlign: "center" }} className="speakable">
             Safe. Reliable. Professional. Every mile, every time — from LAX to the Las Vegas Strip, from Miami Beach to the Everglades.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "center" }}>
             <a href={PHONE_HREF} style={{ background: "linear-gradient(90deg,#A88A30,#C9A84C,#A88A30)", color: "#0A0A0A", fontWeight: 800, fontSize: "15px", letterSpacing: "0.5px", padding: "18px 38px", borderRadius: "4px", textDecoration: "none" }}>
               📞 CALL {PHONE}
             </a>
